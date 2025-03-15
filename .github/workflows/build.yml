@@ -4,8 +4,6 @@ on:
 
 jobs:
   Build-Kernel:
-    strategy:
-      fail-fast: false
     runs-on: ubuntu-latest
     permissions: write-all
     steps:
@@ -17,8 +15,8 @@ jobs:
           kernel-dir: "mtk-4.19'
           config: 'k65v1_64_bsp_defconfig'
           arch: 'arm64'
-          aosp-gcc: true
-          aosp-clang: true
+          aosp-gcc: 'true'
+          aosp-clang: 'true'
           android-version: '12'
           aosp-clang-version: 'r383902'
           disable-lto: true
