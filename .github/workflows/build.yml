@@ -15,7 +15,7 @@ jobs:
           kernel-url: 'https://github.com/vivo-devs/kernel_vivo_mt6765.git'
           kernel-branch: 'master'
           kernel-dir: 'mtk-4.19'
-          config: 'k65v1_64_bsp_defconfig_PD1987F_EX'
+          config: 'k65v1_64_bsp_defconfig'
           arch: 'arm64'
           aosp-gcc: true
           aosp-clang: true
