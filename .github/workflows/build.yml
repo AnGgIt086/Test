@@ -12,15 +12,15 @@ jobs:
       - name: Build
         uses: dabao1955/kernel_build_action@main
         with:
-          kernel-url: 'https://github.com/KrutosVIP/generic_kernel_mediatek_alps.git'
-          kernel-branch: '4.19.191_mt6765'
+          kernel-url: 'https://github.com/vivo-devs/kernel_vivo_mt6765.git'
+          kernel-branch: 'master'
           kernel-dir: 'mtk-4.19'
-          config: 'k65v1_64_bsp_defconfig'
+          config: 'k65v1_64_bsp_defconfig_PD1987F_EX'
           arch: 'arm64'
           aosp-gcc: true
           aosp-clang: true
           android-version: '12'
           aosp-clang-version: 'r383902'
           disable-lto: true
-          anykernel3: true
+          anykernel3: false
           access-token: '${{ secrets.GH_TOKEN }}'
