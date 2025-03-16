@@ -1,6 +1,7 @@
 name: Build Kernel
 on:
   workflow_dispatch:
+  push:
 
 jobs:
   Build-Kernel:
@@ -13,7 +14,7 @@ jobs:
         uses: dabao1955/kernel_build_action@main
         with:
           kernel-url: 'https://github.com/vivo-devs/kernel_vivo_mt6765.git'
-          kernel-branch: 'master'
+          kernel-branch: '11-test'
           kernel-dir: 'mtk-4.19'
           config: 'k65v1_64_bsp_defconfig'
           arch: 'arm64'
