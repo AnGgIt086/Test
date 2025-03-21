@@ -13,10 +13,10 @@ jobs:
       - name: Build
         uses: dabao1955/kernel_build_action@main
         with:
-          kernel-url: 'https://github.com/AnGgIt086/kernel_vivo_mt6765.git'
-          kernel-branch: '11-test'
+          kernel-url: 'https://github.com/AnGgIt086/kernel.git'
+          kernel-branch: 'master'
           kernel-dir: 'mtk-4.19'
-          config: 'k65v1_64_bsp_defconfig'
+          config: '1987_defconfig'
           arch: 'arm64'
           aosp-gcc: true
           aosp-clang: true
